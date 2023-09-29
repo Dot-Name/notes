@@ -26,3 +26,20 @@ To summarize, the steps required for compilation are:
 6. Code Generation: Translate the optimized intermediate code into machine code.
 
 These steps are performed in a sequential manner, with each phase taking input from the previous phase and producing output for the next phase. The compiler's goal is to produce an executable program that behaves correctly and efficiently on the target hardware.
+## Assembler
+An assembler is a type of computer program that takes in basic instructions and converts them into a pattern of bits that the computer's processor can use to perform basic operations. The assembler's job is to convert assembler or assembly language code into machine code that the computer can then read and execute.
+**Types of assemblers:**
+Assembler programs bridge the gap between assembly language and machine language that the computer's processor and memory can read. The assembler type is defined by the number of times it takes the program to scan the source code to translate it into machine language. There are two main types of assemblers.
+
+1. **Single-pass assembler:**
+A single-pass or one-pass assembler translates the entire assembly language program into its equivalent machine language program in one go. In a single scan, the assembler substitutes the pseudo or symbolic instructions in the assembly program with computer-readable machine code.
+
+2. **Multipass assembler:**
+In a multipass assembler, the assembler must scan the assembly language program multiple times before it can be translated to its equivalent machine language avatar. In the first pass, the assembler generates a symbol code where it records and processes the pseudo instructions in assembly language. In the second pass, it generates the equivalent machine code.
+
+**How assemblers work:**
+Most computers come with a basic set of instructions called assembler instructions that correspond to the basic machine operations that the computer can perform. For example, a load instruction causes the processor to move a string of bits from a location in the processor to a special holding place called a register.
+
+A programmer uses a sequence of these assembler instructions to write the source code. The assembler program then takes each statement in the source program and generates a corresponding bit stream or pattern called the object code. This output remains relative to the input source program and can then be executed as needed. The bit stream that constitutes the object program is called the machine code.
+
+The assembler identifies the symbolic names associated with each instruction and allocates memory to each instruction. It also maintains a program counter or location counter (LC) to keep track of the memory addresses of every instruction. As it processes these instructions, it updates the LC and generates the target machine code.
