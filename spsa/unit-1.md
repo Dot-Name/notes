@@ -33,16 +33,48 @@ These steps are performed in a sequential manner, with each phase taking input f
 ## Assembler
 
 An assembler is a type of computer program that takes in basic instructions and converts them into a pattern of bits that the computer's processor can use to perform basic operations. The assembler's job is to convert assembler or assembly language code into machine code that the computer can then read and execute.
-**Types of assemblers:**
+
+### Types of assemblers
+
 Assembler programs bridge the gap between assembly language and machine language that the computer's processor and memory can read. The assembler type is defined by the number of times it takes the program to scan the source code to translate it into machine language. There are two main types of assemblers.
 
-1. **Single-pass assembler:**
-   A single-pass or one-pass assembler translates the entire assembly language program into its equivalent machine language program in one go. In a single scan, the assembler substitutes the pseudo or symbolic instructions in the assembly program with computer-readable machine code.
+1. Single Phase Assembler:
 
-2. **Multipass assembler:**
-   In a multipass assembler, the assembler must scan the assembly language program multiple times before it can be translated to its equivalent machine language avatar. In the first pass, the assembler generates a symbol code where it records and processes the pseudo instructions in assembly language. In the second pass, it generates the equivalent machine code.
+   - A single-phase assembler performs all the tasks in a single pass over the assembly code.
+   - It reads each line of code, analyzes it, and generates the corresponding machine code.
+   - It resolves forward references by using a symbol table.
+   - It is simple and efficient for small programs but may not handle complex programs efficiently.
 
-**How assemblers work:**
+2. Two Phase Assembler:
+
+   - A two-phase assembler divides the assembly process into two passes: analysis and synthesis.
+   - In the analysis phase:
+     - It separates the label, mnemonic opcode, and operand fields of each statement.
+     - It enters the symbol and its corresponding location counter value into the symbol table.
+     - It checks the validity of the mnemonic opcode using the mnemonics table.
+     - It updates the location counter based on the opcode and operands.
+   - In the synthesis phase:
+     - It obtains the machine opcode corresponding to the mnemonic from the mnemonics table.
+     - It obtains the address of each memory operand from the symbol table.
+     - It synthesizes a machine instruction or the correct representation of a constant.
+   - The two-phase approach allows the assembler to handle forward references efficiently.
+
+### Problem Statement
+
+- The assembler analyzes the assembly code and generates the corresponding machine code instructions.
+- It resolves memory requirements for each assembly statement.
+- It constructs the symbol table, which associates labels with memory addresses.
+
+### Symbol Table
+
+- The symbol table is a data structure used by the assembler to associate labels with memory addresses.
+- It is constructed during the analysis phase and used during the synthesis phase.
+- Each entry in the symbol table consists of a symbol (label) and its corresponding memory address.
+- The symbol table allows the assembler to resolve forward references and generate correct machine code.
+- It promotes self-documenting code by allowing instructions to reference memory locations by name.
+
+### How assemblers work
+
 Most computers come with a basic set of instructions called assembler instructions that correspond to the basic machine operations that the computer can perform. For example, a load instruction causes the processor to move a string of bits from a location in the processor to a special holding place called a register.
 
 A programmer uses a sequence of these assembler instructions to write the source code. The assembler program then takes each statement in the source program and generates a corresponding bit stream or pattern called the object code. This output remains relative to the input source program and can then be executed as needed. The bit stream that constitutes the object program is called the machine code.
