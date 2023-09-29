@@ -43,3 +43,4 @@ Most computers come with a basic set of instructions called assembler instructio
 A programmer uses a sequence of these assembler instructions to write the source code. The assembler program then takes each statement in the source program and generates a corresponding bit stream or pattern called the object code. This output remains relative to the input source program and can then be executed as needed. The bit stream that constitutes the object program is called the machine code.
 
 The assembler identifies the symbolic names associated with each instruction and allocates memory to each instruction. It also maintains a program counter or location counter (LC) to keep track of the memory addresses of every instruction. As it processes these instructions, it updates the LC and generates the target machine code.
+
