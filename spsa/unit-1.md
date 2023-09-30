@@ -80,3 +80,41 @@ Most computers come with a basic set of instructions called assembler instructio
 A programmer uses a sequence of these assembler instructions to write the source code. The assembler program then takes each statement in the source program and generates a corresponding bit stream or pattern called the object code. This output remains relative to the input source program and can then be executed as needed. The bit stream that constitutes the object program is called the machine code.
 
 The assembler identifies the symbolic names associated with each instruction and allocates memory to each instruction. It also maintains a program counter or location counter (LC) to keep track of the memory addresses of every instruction. As it processes these instructions, it updates the LC and generates the target machine code.
+
+## What is a text editor?
+A text editor refers to any form of computer program that enables users to create, change, edit, open and view plain text files. They come already installed on most operating systems but their dominant application has evolved from notetaking and creating documents to crafting complex code. Today, text editors are a core part of a developer’s toolbox and are most commonly used to create computer programmes, edit hypertext markup language (HTML), and build and design web pages.
+
+Examples of commonly used text editors include:
+
+- Android Studio
+- Atom
+- Notepad++
+- Sublime Text
+- VS Code
+### Features and functions of a text editor
+1. Syntax highlighting:
+Reading through endless reams of code can be overwhelming and time-consuming – not to mention messy. This feature allows users to colour code text based on the programming or markup language it is written in (such as HTML and Javascript) for ease of reference.
+
+2. Intelligent code completion:
+A context-aware software that speeds up the coding process by reducing typos, correcting common mistakes and offering auto-completion suggestions for syntax errors.
+
+3. Snippets:
+An essential feature that enables users to quickly substitute longer pieces of content or code with a shortcut phrase – which is great for creating forms, formatting articles or replicating chunks of information that you’re likely to repeat in your day-to-day workload.
+
+4. Code folding:
+Also called expand and collapse, the code folding feature hides or displays certain sections of code or text, allowing for a streamlined and decluttered display – great for if you’re working on a long document.
+
+5. Vertical selection editing:
+A useful tool that enables users to select, edit or add to multiple lines of code simultaneously, which is great for making repeat small changes (such as adding the same character to the end of every line, or deleting recurring errors).
+
+
+
+
+
+
+
+
+
+
+
+
